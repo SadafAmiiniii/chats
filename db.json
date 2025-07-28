@@ -1,0 +1,37 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "userName": "Cecilia Sassaki",
+      "status" : "online",
+      "avatar" : "https://s3-alpha-sig.figma.com/img/ef13/41a4/c322a4093041beb140c651da008c4dff?Expires=1676246400&Signature=h8V~S27AGcDIXerCqOdyRKyHz0dVQ4QqVks40W9twD5hXlG3ZnGF91z3qKu8dkhiX513FuifbAe7H40hxgLPSzpWMvttN6ohSCevhvpKSmqQsIQ~qmQYtn7kfqiMVGmPci2i5ZD6dFO7IgqXJv7h21Aiae0Rti1WlQjnFRPbnVXRpQM9yczY4C2yjAltrX7w8Ga5TtveoQrlpl2NOrAT9Uh08DZJ7eLs7cW2gDEE5Q9IoOsan8QfOBIigOE8btkuM5VqU7SSLVtMdBd~MQNZULrKosk4fwmHiuJk0GFhy2w7u~mLkFlhce7-5q1o0blm9lLLX8wtIHrywG2AAxXqNg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "chats":[
+        {
+          "status" : "receiver",
+          "userName": "Cecilia",
+          "time": "11:30",
+          "content" : "Tive uma ideia incrível para um projeto! 😍"
+        },
+        {
+          "status" : "sender",
+          "userName": "Você",
+          "time": "11:32",
+          "content" : "Sério? Me conta mais."
+        },
+        {
+          "status" : "receiver",
+          "userName": "Cecilia",
+          "time": "11:34",
+          "content" : "E se a gente fizesse um chat moderno e responsivo em apenas uma semana?"
+        },
+        {
+          "status" : "sender",
+          "userName": "Você",
+          "time": "11:36",
+          "content" : "Séri#boraCodar! 🚀"
+        }
+      ]
+    } 
+  ]
+
+}
