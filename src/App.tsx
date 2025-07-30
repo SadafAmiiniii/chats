@@ -50,25 +50,35 @@ function App() {
       ]
       }
     ]);
+    const [error,setError] = useState(false)
 
     const fetchData = async () => {
-      const response = await fetch("http://localhost:4000/data");
-      const mainData = await response.json();
-      console.log(mainData);
-      setData(mainData);
+      try {
+        const response = await fetch("http://localhost:4000/data");
+        const mainData = await response.json();
+        console.log(mainData);
+        setData(mainData);
+      } catch (error) {
+        setError(true)
+        console.log("🚀 ~ error:", error)
+        
+      }
+      
     }
 
     useEffect(()=>{
       fetchData()
     },[])
 
+  if(error) return <div>error</div>
+  
   return (
     <>
 
       <User id={data[0].id} userName={data[0].userName} status={data[0].status} avatar={data[0].avatar} />
       {
-        data[0].chats.map((chat)=>{
-          return <Chats status={chat.status} userName={chat.userName} time={chat.time} content={chat.content}/>
+        data[0].chats.map((chat,index)=>{
+          return <Chats key={index} status={chat.status} userName={chat.userName} time={chat.time} content={chat.content}/>
         })
       }
       <div className='bg-gray-900 py-8 px-18'>
